@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selectors Example</title>
+    <style>
+        
+        p {
+            font-family: Arial, sans-serif;
+            color: red;
+        }
+
+        
+        .highlight {
+            font-weight: bold;
+            background-color: #ffeeba;
+            padding: 20px;
+        }
+
+        /* ID Selector */
+        #title {
+            text-align: center;
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+ 
+        input[name="username"] {
+            width: 200px;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">ID Selector</h1>
+    
+    <p class="highlight">Class Selector</p>
+    
+    <input type="text" name="username" placeholder="Enter your username">
+
+    <div>
+        <p>Tag Name Selector </p>
+    </div>
+</body>
+</html>

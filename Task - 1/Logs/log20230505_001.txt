@@ -1,0 +1,256 @@
+2023-05-05 21:06:34.824 +05:30 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2023-05-05 21:07:23.519 +05:30 [INF] Now listening on: http://localhost:5156
+2023-05-05 21:07:23.562 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-05 21:07:23.563 +05:30 [INF] Hosting environment: Development
+2023-05-05 21:07:23.564 +05:30 [INF] Content root path: D:\MVC\PaymentClaimApi
+2023-05-05 21:07:26.809 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/ - -
+2023-05-05 21:07:26.883 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-05-05 21:07:26.889 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/ - - - 404 0 - 83.7182ms
+2023-05-05 21:07:28.977 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.html - -
+2023-05-05 21:07:29.085 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.html - - - 200 - text/html;charset=utf-8 108.6982ms
+2023-05-05 21:07:30.273 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - -
+2023-05-05 21:07:30.409 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 136.3105ms
+2023-05-05 21:07:36.295 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/Get - -
+2023-05-05 21:07:36.301 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:07:36.317 +05:30 [INF] Route matched with {action = "Get", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PaymentClaimApi.Models.ClaimDetails]] Get() on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:07:37.470 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+2023-05-05 21:07:37.553 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PaymentClaimApi.Models.ClaimDetails, PaymentClaimApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-05 21:07:37.567 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi) in 1243.0969ms
+2023-05-05 21:07:37.571 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:07:37.588 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/Get - - - 200 - application/json;+charset=utf-8 1292.8258ms
+2023-05-05 21:07:49.503 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/Get - -
+2023-05-05 21:07:49.511 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:07:49.512 +05:30 [INF] Route matched with {action = "Get", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PaymentClaimApi.Models.ClaimDetails]] Get() on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:07:49.539 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+2023-05-05 21:07:49.544 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PaymentClaimApi.Models.ClaimDetails, PaymentClaimApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-05 21:07:49.548 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi) in 33.3035ms
+2023-05-05 21:07:49.550 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:07:49.552 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/Get - - - 200 - application/json;+charset=utf-8 48.9033ms
+2023-05-05 21:08:23.995 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5156/api/Details/DeleteById/2 - -
+2023-05-05 21:08:24.007 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.DeleteById (PaymentClaimApi)'
+2023-05-05 21:08:24.024 +05:30 [INF] Route matched with {action = "DeleteById", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult DeleteById(Int32) on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:08:24.510 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+WHERE [d].[Id] = @__p_0
+2023-05-05 21:08:24.656 +05:30 [INF] Executed DbCommand (64ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [detail]
+OUTPUT 1
+WHERE [Id] = @p0;
+2023-05-05 21:08:24.671 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-05-05 21:08:24.672 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.DeleteById (PaymentClaimApi) in 645.6374ms
+2023-05-05 21:08:24.674 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.DeleteById (PaymentClaimApi)'
+2023-05-05 21:08:24.676 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5156/api/Details/DeleteById/2 - - - 204 - - 680.5518ms
+2023-05-05 21:08:30.577 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5156/api/Details/DeleteById/3 - -
+2023-05-05 21:08:30.579 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.DeleteById (PaymentClaimApi)'
+2023-05-05 21:08:30.580 +05:30 [INF] Route matched with {action = "DeleteById", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult DeleteById(Int32) on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:08:30.594 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+WHERE [d].[Id] = @__p_0
+2023-05-05 21:08:30.603 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [detail]
+OUTPUT 1
+WHERE [Id] = @p0;
+2023-05-05 21:08:30.610 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-05-05 21:08:30.611 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.DeleteById (PaymentClaimApi) in 28.1296ms
+2023-05-05 21:08:30.613 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.DeleteById (PaymentClaimApi)'
+2023-05-05 21:08:30.614 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5156/api/Details/DeleteById/3 - - - 204 - - 37.1220ms
+2023-05-05 21:08:34.916 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/Get - -
+2023-05-05 21:08:34.918 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:08:34.919 +05:30 [INF] Route matched with {action = "Get", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PaymentClaimApi.Models.ClaimDetails]] Get() on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:08:34.946 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+2023-05-05 21:08:34.949 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PaymentClaimApi.Models.ClaimDetails, PaymentClaimApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-05 21:08:34.951 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi) in 27.7387ms
+2023-05-05 21:08:34.953 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:08:34.955 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/Get - - - 200 - application/json;+charset=utf-8 39.3643ms
+2023-05-05 21:09:59.410 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/Get - -
+2023-05-05 21:09:59.411 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:09:59.414 +05:30 [INF] Route matched with {action = "Get", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PaymentClaimApi.Models.ClaimDetails]] Get() on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:09:59.426 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+2023-05-05 21:09:59.431 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PaymentClaimApi.Models.ClaimDetails, PaymentClaimApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-05 21:09:59.433 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi) in 16.3044ms
+2023-05-05 21:09:59.435 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:09:59.436 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/Get - - - 200 - application/json;+charset=utf-8 26.4068ms
+2023-05-05 21:11:20.722 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/Get - -
+2023-05-05 21:11:20.727 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:11:20.730 +05:30 [INF] Route matched with {action = "Get", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PaymentClaimApi.Models.ClaimDetails]] Get() on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:11:20.738 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+2023-05-05 21:11:20.742 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PaymentClaimApi.Models.ClaimDetails, PaymentClaimApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-05 21:11:20.744 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi) in 9.4043ms
+2023-05-05 21:11:20.745 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:11:20.747 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/Get - - - 200 - application/json;+charset=utf-8 24.5215ms
+2023-05-05 21:11:31.320 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/Get - -
+2023-05-05 21:11:31.321 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:11:31.322 +05:30 [INF] Route matched with {action = "Get", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PaymentClaimApi.Models.ClaimDetails]] Get() on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:11:31.328 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+2023-05-05 21:11:31.330 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PaymentClaimApi.Models.ClaimDetails, PaymentClaimApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-05 21:11:31.332 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi) in 6.4759ms
+2023-05-05 21:11:31.334 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:11:31.337 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/Get - - - 200 - application/json;+charset=utf-8 16.8188ms
+2023-05-05 21:11:38.172 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/Get - -
+2023-05-05 21:11:38.174 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:11:38.176 +05:30 [INF] Route matched with {action = "Get", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PaymentClaimApi.Models.ClaimDetails]] Get() on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:11:38.181 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+2023-05-05 21:11:38.184 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PaymentClaimApi.Models.ClaimDetails, PaymentClaimApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-05 21:11:38.186 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi) in 7.9784ms
+2023-05-05 21:11:38.188 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:11:38.189 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/Get - - - 200 - application/json;+charset=utf-8 17.3931ms
+2023-05-05 21:11:51.984 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/Get - -
+2023-05-05 21:11:51.985 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:11:51.987 +05:30 [INF] Route matched with {action = "Get", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PaymentClaimApi.Models.ClaimDetails]] Get() on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:11:51.993 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+2023-05-05 21:11:51.995 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PaymentClaimApi.Models.ClaimDetails, PaymentClaimApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-05 21:11:51.997 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi) in 7.535ms
+2023-05-05 21:11:51.998 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:11:52.000 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/Get - - - 200 - application/json;+charset=utf-8 16.1137ms
+2023-05-05 21:14:00.607 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/Get - -
+2023-05-05 21:14:00.608 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:14:00.610 +05:30 [INF] Route matched with {action = "Get", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PaymentClaimApi.Models.ClaimDetails]] Get() on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:14:00.618 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+2023-05-05 21:14:00.621 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PaymentClaimApi.Models.ClaimDetails, PaymentClaimApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-05 21:14:00.623 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi) in 11.2316ms
+2023-05-05 21:14:00.625 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:14:00.627 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/Get - - - 200 - application/json;+charset=utf-8 20.3347ms
+2023-05-05 21:14:18.851 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/Get - -
+2023-05-05 21:14:18.852 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:14:18.853 +05:30 [INF] Route matched with {action = "Get", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PaymentClaimApi.Models.ClaimDetails]] Get() on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:14:18.859 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+2023-05-05 21:14:18.862 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PaymentClaimApi.Models.ClaimDetails, PaymentClaimApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-05 21:14:18.865 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi) in 8.6401ms
+2023-05-05 21:14:18.866 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:14:18.867 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/Get - - - 200 - application/json;+charset=utf-8 16.6797ms
+2023-05-05 21:14:31.123 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/Get - -
+2023-05-05 21:14:31.125 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:14:31.127 +05:30 [INF] Route matched with {action = "Get", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PaymentClaimApi.Models.ClaimDetails]] Get() on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:14:31.134 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+2023-05-05 21:14:31.137 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PaymentClaimApi.Models.ClaimDetails, PaymentClaimApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-05 21:14:31.140 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi) in 10.0648ms
+2023-05-05 21:14:31.141 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:14:31.143 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/Get - - - 200 - application/json;+charset=utf-8 19.5754ms
+2023-05-05 21:14:41.090 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/Get - -
+2023-05-05 21:14:41.091 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:14:41.093 +05:30 [INF] Route matched with {action = "Get", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PaymentClaimApi.Models.ClaimDetails]] Get() on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:14:41.100 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+2023-05-05 21:14:41.103 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PaymentClaimApi.Models.ClaimDetails, PaymentClaimApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-05 21:14:41.105 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi) in 8.1685ms
+2023-05-05 21:14:41.106 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:14:41.108 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/Get - - - 200 - application/json;+charset=utf-8 18.0372ms
+2023-05-05 21:14:46.331 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/Get - -
+2023-05-05 21:14:46.332 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:14:46.334 +05:30 [INF] Route matched with {action = "Get", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PaymentClaimApi.Models.ClaimDetails]] Get() on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:14:46.341 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+2023-05-05 21:14:46.343 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PaymentClaimApi.Models.ClaimDetails, PaymentClaimApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-05 21:14:46.346 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi) in 9.248ms
+2023-05-05 21:14:46.347 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:14:46.349 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/Get - - - 200 - application/json;+charset=utf-8 17.8690ms
+2023-05-05 21:15:32.462 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/Get - -
+2023-05-05 21:15:32.463 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:15:32.465 +05:30 [INF] Route matched with {action = "Get", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PaymentClaimApi.Models.ClaimDetails]] Get() on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:15:32.471 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+2023-05-05 21:15:32.474 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PaymentClaimApi.Models.ClaimDetails, PaymentClaimApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-05 21:15:32.477 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi) in 9.3773ms
+2023-05-05 21:15:32.478 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:15:32.480 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/Get - - - 200 - application/json;+charset=utf-8 17.9173ms
+2023-05-05 21:17:44.158 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/Get - -
+2023-05-05 21:17:44.159 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:17:44.161 +05:30 [INF] Route matched with {action = "Get", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PaymentClaimApi.Models.ClaimDetails]] Get() on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:17:44.166 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+2023-05-05 21:17:44.169 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PaymentClaimApi.Models.ClaimDetails, PaymentClaimApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-05 21:17:44.171 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi) in 7.971ms
+2023-05-05 21:17:44.173 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:17:44.174 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/Get - - - 200 - application/json;+charset=utf-8 16.8635ms
+2023-05-05 21:24:11.045 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/Get - -
+2023-05-05 21:24:11.047 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:24:11.048 +05:30 [INF] Route matched with {action = "Get", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PaymentClaimApi.Models.ClaimDetails]] Get() on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:24:11.060 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+2023-05-05 21:24:11.064 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PaymentClaimApi.Models.ClaimDetails, PaymentClaimApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-05 21:24:11.065 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi) in 14.7242ms
+2023-05-05 21:24:11.067 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:24:11.068 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/Get - - - 200 - application/json;+charset=utf-8 22.9103ms
+2023-05-05 21:26:34.900 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/Get - -
+2023-05-05 21:26:34.902 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:26:34.905 +05:30 [INF] Route matched with {action = "Get", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PaymentClaimApi.Models.ClaimDetails]] Get() on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:26:34.912 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+2023-05-05 21:26:34.914 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PaymentClaimApi.Models.ClaimDetails, PaymentClaimApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-05 21:26:34.916 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi) in 7.971ms
+2023-05-05 21:26:34.918 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:26:34.920 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/Get - - - 200 - application/json;+charset=utf-8 19.5626ms
+2023-05-05 21:29:07.335 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/Get - -
+2023-05-05 21:29:07.337 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:29:07.339 +05:30 [INF] Route matched with {action = "Get", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PaymentClaimApi.Models.ClaimDetails]] Get() on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:29:07.346 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+2023-05-05 21:29:07.349 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PaymentClaimApi.Models.ClaimDetails, PaymentClaimApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-05 21:29:07.351 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi) in 8.0632ms
+2023-05-05 21:29:07.353 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:29:07.354 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/Get - - - 200 - application/json;+charset=utf-8 19.1385ms
+2023-05-05 21:30:11.363 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/Get - -
+2023-05-05 21:30:11.364 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:30:11.366 +05:30 [INF] Route matched with {action = "Get", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PaymentClaimApi.Models.ClaimDetails]] Get() on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:30:11.430 +05:30 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+2023-05-05 21:30:11.433 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PaymentClaimApi.Models.ClaimDetails, PaymentClaimApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-05 21:30:11.435 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi) in 66.7198ms
+2023-05-05 21:30:11.436 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:30:11.439 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/Get - - - 200 - application/json;+charset=utf-8 75.9184ms
+2023-05-05 21:40:47.330 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/Get - -
+2023-05-05 21:40:47.332 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:40:47.334 +05:30 [INF] Route matched with {action = "Get", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PaymentClaimApi.Models.ClaimDetails]] Get() on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:40:47.346 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+2023-05-05 21:40:47.348 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PaymentClaimApi.Models.ClaimDetails, PaymentClaimApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-05 21:40:47.350 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi) in 13.5872ms
+2023-05-05 21:40:47.352 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:40:47.353 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/Get - - - 200 - application/json;+charset=utf-8 22.8769ms
+2023-05-05 21:40:57.543 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/Get - -
+2023-05-05 21:40:57.545 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:40:57.546 +05:30 [INF] Route matched with {action = "Get", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PaymentClaimApi.Models.ClaimDetails]] Get() on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-05 21:40:57.553 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Status], [d].[Type]
+FROM [detail] AS [d]
+2023-05-05 21:40:57.556 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[PaymentClaimApi.Models.ClaimDetails, PaymentClaimApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-05 21:40:57.558 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi) in 8.5884ms
+2023-05-05 21:40:57.560 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.Get (PaymentClaimApi)'
+2023-05-05 21:40:57.561 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/Get - - - 200 - application/json;+charset=utf-8 17.9766ms

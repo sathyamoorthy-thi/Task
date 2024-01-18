@@ -1,0 +1,71 @@
+2023-05-03 18:30:07.797 +05:30 [INF] Now listening on: http://localhost:5156
+2023-05-03 18:30:07.929 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-03 18:30:07.933 +05:30 [INF] Hosting environment: Development
+2023-05-03 18:30:07.936 +05:30 [INF] Content root path: D:\MVC\PaymentClaimApi
+2023-05-03 18:30:16.266 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/ - -
+2023-05-03 18:30:16.388 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-05-03 18:30:16.400 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/ - - - 404 0 - 138.0047ms
+2023-05-03 18:30:19.448 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.html - -
+2023-05-03 18:30:19.605 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.html - - - 200 - text/html;charset=utf-8 157.2791ms
+2023-05-03 18:30:19.650 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/favicon.ico - -
+2023-05-03 18:30:19.656 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/favicon.ico - - - 404 0 - 5.7201ms
+2023-05-03 18:30:21.012 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - -
+2023-05-03 18:30:21.230 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 217.2796ms
+2023-05-03 18:31:41.078 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/GetById/4 - -
+2023-05-03 18:31:41.093 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.GetById (PaymentClaimApi)'
+2023-05-03 18:31:41.148 +05:30 [INF] Route matched with {action = "GetById", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[PaymentClaimApi.Models.ClaimDetails] GetById(Int32) on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-03 18:31:41.359 +05:30 [ERR] Enter the correct record id :4
+2023-05-03 18:31:43.409 +05:30 [INF] Executed DbCommand (119ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Type]
+FROM [detail] AS [d]
+WHERE [d].[Id] = @__p_0
+2023-05-03 18:31:43.472 +05:30 [INF] Executing ObjectResult, writing value of type 'null'.
+2023-05-03 18:31:43.484 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.GetById (PaymentClaimApi) in 2314.5351ms
+2023-05-03 18:31:43.488 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.GetById (PaymentClaimApi)'
+2023-05-03 18:31:43.513 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/GetById/4 - - - 204 - - 2434.3892ms
+2023-05-03 18:31:52.577 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/GetById/4 - -
+2023-05-03 18:31:52.582 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.GetById (PaymentClaimApi)'
+2023-05-03 18:31:52.585 +05:30 [INF] Route matched with {action = "GetById", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[PaymentClaimApi.Models.ClaimDetails] GetById(Int32) on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-03 18:31:52.594 +05:30 [ERR] Enter the correct record id :4
+2023-05-03 18:31:52.701 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Type]
+FROM [detail] AS [d]
+WHERE [d].[Id] = @__p_0
+2023-05-03 18:31:52.711 +05:30 [INF] Executing ObjectResult, writing value of type 'null'.
+2023-05-03 18:31:52.716 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.GetById (PaymentClaimApi) in 125.3627ms
+2023-05-03 18:31:52.721 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.GetById (PaymentClaimApi)'
+2023-05-03 18:31:52.725 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/GetById/4 - - - 204 - - 148.6990ms
+2023-05-03 18:31:58.946 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/GetById/5 - -
+2023-05-03 18:31:58.949 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.GetById (PaymentClaimApi)'
+2023-05-03 18:31:58.952 +05:30 [INF] Route matched with {action = "GetById", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[PaymentClaimApi.Models.ClaimDetails] GetById(Int32) on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-03 18:31:58.980 +05:30 [ERR] Enter the correct record id :5
+2023-05-03 18:31:59.012 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Type]
+FROM [detail] AS [d]
+WHERE [d].[Id] = @__p_0
+2023-05-03 18:31:59.106 +05:30 [INF] Executing ObjectResult, writing value of type 'PaymentClaimApi.Models.ClaimDetails'.
+2023-05-03 18:31:59.128 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.GetById (PaymentClaimApi) in 155.53ms
+2023-05-03 18:31:59.131 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.GetById (PaymentClaimApi)'
+2023-05-03 18:31:59.135 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/GetById/5 - - - 200 - application/json;+charset=utf-8 188.3109ms
+2023-05-03 18:51:08.069 +05:30 [INF] Now listening on: http://localhost:5156
+2023-05-03 18:51:08.101 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-03 18:51:08.103 +05:30 [INF] Hosting environment: Development
+2023-05-03 18:51:08.104 +05:30 [INF] Content root path: D:\MVC\PaymentClaimApi
+2023-05-03 18:51:13.642 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/ - -
+2023-05-03 18:51:13.715 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-05-03 18:51:13.723 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/ - - - 404 0 - 84.2211ms
+2023-05-03 18:51:16.554 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.html - -
+2023-05-03 18:51:16.662 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.html - - - 200 - text/html;charset=utf-8 108.1594ms
+2023-05-03 18:51:17.898 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - -
+2023-05-03 18:51:18.023 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 124.7222ms
+2023-05-03 18:51:25.042 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Details/GetById/7 - -
+2023-05-03 18:51:25.050 +05:30 [INF] Executing endpoint 'PaymentClaimApi.Controllers.DetailsController.GetById (PaymentClaimApi)'
+2023-05-03 18:51:25.078 +05:30 [INF] Route matched with {action = "GetById", controller = "Details"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[PaymentClaimApi.Models.ClaimDetails] GetById(Int32) on controller PaymentClaimApi.Controllers.DetailsController (PaymentClaimApi).
+2023-05-03 18:51:27.699 +05:30 [INF] Executed DbCommand (132ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Amount], [d].[Currency], [d].[Date], [d].[Description], [d].[Email], [d].[Name], [d].[PhoneNumber], [d].[Type]
+FROM [detail] AS [d]
+WHERE [d].[Id] = @__p_0
+2023-05-03 18:51:27.729 +05:30 [INF] Executing ObjectResult, writing value of type 'null'.
+2023-05-03 18:51:27.735 +05:30 [INF] Executed action PaymentClaimApi.Controllers.DetailsController.GetById (PaymentClaimApi) in 2650.2195ms
+2023-05-03 18:51:27.737 +05:30 [INF] Executed endpoint 'PaymentClaimApi.Controllers.DetailsController.GetById (PaymentClaimApi)'
+2023-05-03 18:51:27.749 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Details/GetById/7 - - - 204 - - 2707.6945ms
